@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "client": "cd journey && npm start",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "express": "^4.16.2"
