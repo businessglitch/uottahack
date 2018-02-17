@@ -1,0 +1,14 @@
+{
+  "name": "journey",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd journey && npm start",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
