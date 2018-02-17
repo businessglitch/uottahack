@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/header.js';
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from './components/Home.js';
+import JourneyCards from './components/JourneyCards.js';
+
 
 class App extends Component {
+ 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <p className="App-intro">
-          This is the bullshit that we add in the intro
-        </p>
+      <div>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/JourneyCards" component={JourneyCards} />
+        </Switch>
       </div>
     );
   }
 }
+
 
 export default App;

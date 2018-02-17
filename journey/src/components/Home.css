@@ -1,0 +1,22 @@
+.Home {
+  height: 700px;
+  width:100%;
+  background-image: url("../assets/images/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 800px; 
+}
+
+.Home-intro {
+  font-size: large;
+  color: #FFF;
+  text-align: center;
+}
+
+.Home-button {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+
+}
