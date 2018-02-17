@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/header.js';
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from './components/Home.js';
+import JourneyCards from './components/JourneyCards.js';
+
 
 class App extends Component {
+<<<<<<< HEAD
   constructor(props) {
     super(props);
     
@@ -20,16 +28,20 @@ class App extends Component {
     this.callApi().then(function(){}).catch(function(){});
   }
 
+=======
+ 
+>>>>>>> 0967992e22c4242e52bb63cc252cebae6aa07496
   render() {
     return (
-      <div className="App">
-        <Header />
-        <p className="App-intro">
-        </p>
-        <iframe src='https://giphy.com/embed/bWqNM7zzqSu2Y' width="1080" height="1080" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <div>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/JourneyCards" component={JourneyCards} />
+        </Switch>
       </div>
     );
   }
 }
+
 
 export default App;
