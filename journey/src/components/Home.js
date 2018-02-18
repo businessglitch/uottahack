@@ -11,15 +11,17 @@ class Home extends Component {
   	}
 
   	render() {
-  		return(
-	        <div className="Home centered">
-		        	<Header />
-			        <p className="Home-intro">
-			          Are you ready to go on a journey ?
-			        </p>
-		        <Link to="/JourneyCards"><button onClick={this.startJourney} className="Home-button massive ui blue button">START JOURNEY</button></Link>
-	      	</div>
-	      	);
+  		return (
+  			<div className="Home-body">
+		        <div className="Home centered">
+			        	<Header />
+				        <p className="Home-intro">
+				          Are you ready to go on a journey ?
+				        </p>
+			        <Link to="/JourneyCards"><button onClick={this.startJourney} className="Home-button massive ui blue button">START JOURNEY</button></Link>
+		      	</div>
+		    </div>
+	    );
   	}
 }
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Raleway|Roboto');
 
-body {
+.Home-body {
   height: 700px;
   width:100%;
   background-image: url("../assets/images/giphy.gif");
@@ -9,7 +9,8 @@ body {
   font-family:'Raleway';
 }
 
-.Home{
+.Home {
+
   padding: 2.5%;
   border: 3px solid white;
   border-radius: 13%;
