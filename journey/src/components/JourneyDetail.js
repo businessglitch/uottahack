@@ -6,36 +6,35 @@ import {
 } from 'react-router-dom';
 
 class JourneyDetail extends Component {
-  render() {
-    return (
-    <div>
-        <div className="ui vertical steps">
-        {Journeys.ma}
-  			<div className="step">
-    			<div className="content">
-      				<div className="title">Shipping</div>
-      				<div className="description">Choose your shipping options</div>
-    			</div>
-  			</div>
-  			<div className="completed step">
-    			<i className="credit card icon"></i>
-   				<div className="content">
-      				<div className="title">Billing</div>
-      				<div className="description">Enter billing information</div>
-    			</div>
-  			</div>
-  			<div className="active step">
-    			<i className="info icon"></i>
-    			<div className="content">
-				   	<div className="title">Confirm Order</div>
-				    <div className="description">Verify order details</div>
-    			</div>
-  			</div>
-		</div>
-    </div>
-    );
-  }
-}
+	 constructor(props) {
+	    super(props);
+
+	    this.state = { journey: Journeys[this.props.match.params.id]};
+	  }
+
+	componentDidMount() {
+		this.setState({
+            journey: Journeys[this.props.match.params.id]
+        });
+		//console.log(this.state.journey)
+	}
+  	render() {
+		    return (
+		    	<div>
+		        	<div className="ui vertical steps">
+				        {this.state.journey.events.map((item,i) => (
+							<div key={i} className="step">
+				    			<div className="content">
+				      				<div className="title">{item.name}</div>
+				      				<div className="description">Choose your shipping options</div>
+				    			</div>
+				  			</div>
+				        ))}	
+					</div>
+		     	</div>
+		    );
+		}
+  	}
 
 export default JourneyDetail;
 

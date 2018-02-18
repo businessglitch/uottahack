@@ -3,7 +3,9 @@ var journey_1 = {
   "difficulty": "2",
   "members": "2 - 4",
   "budget" : "$100",
-  "1" : {
+  "image" : "../assets/images/adventurePics/nag.jpg",
+
+  "events" : [{
 
     "duration": 7200000,
     "id": "247402077",
@@ -31,10 +33,8 @@ var journey_1 = {
       "state": "ON"
 
     }
-
   },//end of point 1
-
-  "2" : {
+  {
 
     "created": 1509917440000,
     "duration": 7200000,
@@ -63,11 +63,8 @@ var journey_1 = {
       "state": "ON"
 
     }
-
-
   },//end of point 2
-
-  "3" : {
+   {
 
     "created": 1518315463000,
     "duration": 6300000,
@@ -96,10 +93,7 @@ var journey_1 = {
         "state": "ON"
     }
 
-  }//End of point 3
-
-
-
+  }]//End of point 3
 }//end of Journey_1
 
 var journey_2 = {
@@ -107,10 +101,8 @@ var journey_2 = {
   "difficulty": "2",
   "members": "1 - 2",
   "budget" : "$75",
-
-
-  "1" : {
-
+  "image" : "../assets/images/adventurePics/enter.jpg",
+  "events" : [{
     "created": 1518636542000,
     "duration": 6900000,
     "id": "247811196",
@@ -137,11 +129,8 @@ var journey_2 = {
         "zip": "K1R 6V3",
         "state": "ON"
     }
-
   },//end of point 1
-
-  "2" : {
-
+  {
     "created": 1518531296000,
     "duration": 18000000,
     "id": "247769482",
@@ -168,12 +157,8 @@ var journey_2 = {
         "zip": "",
         "state": "ON"
     }
-
-
   },//end of point 2
-
-  "3" : {
-
+  {
     "created": 1517530424000,
     "duration": 10800000,
     "id": "vvzfhpyxdbfc",
@@ -187,7 +172,6 @@ var journey_2 = {
     "waitlist_count": 0,
     "yes_rsvp_count": 2,
     "venue": {
-
       "id": 24738808,
       "name": "Carleton University - Norm Fenn Gymnasium (in the Ice House)",
       "lat": 0,
@@ -199,10 +183,8 @@ var journey_2 = {
       "localized_country_name": "Canada",
       "zip": "",
       "state": "ON"
-
     }
-
-  }//end of point 3
+  }]//end of point 3
 
 }
 
@@ -213,8 +195,8 @@ var journey_3 = {
   "difficulty": "4",
   "members": "3 - 6",
   "budget" : "$250",
-
-  "1" : {
+  "image" : "../assets/images/adventurePics/enter.jpg",
+  "events" : [{
 
     "duration": 7200000,
     "id": "247402077",
@@ -242,12 +224,9 @@ var journey_3 = {
       "state": "ON"
 
     }
-
-
-  },//end of point 1
-
-  "2" : {
-
+  },
+  //end of point 1
+  {
     "id": "247522679",
     "name": "Dating & Solitude (dinner & discussion)",
     "rsvp_limit": 34,
@@ -272,15 +251,9 @@ var journey_3 = {
       "localized_country_name": "Canada",
       "zip": "",
       "state": "ON"
-
     }
-
-
-
   },//end of point 2
-
-  "3" : {
-
+  {
     "created": 1511149673000,
     "duration": 10800000,
     "id": "nrmxznyxdbdc",
@@ -306,12 +279,8 @@ var journey_3 = {
       "localized_country_name": "Canada",
       "zip": "K1S 2M9",
       "state": "on"
-
     }
-
-  }//end of point 3
-
-
+  }]//end of point 3
 }
 
 //end of Journey_3
