@@ -1,12 +1,10 @@
 body{
-  background-image: url("../assets/images/adventurePics/suzyq.jpg");
-  background-size: cover;
 }
 
 .Journey-cards {
   font-size: 1.5em;
   text-align: center;
-  color: #FFF;
+  color: #000;
   margin: auto;
   width: 50%;
   border: 3px solid green;
@@ -14,7 +12,7 @@ body{
 }
 
 .card{
-  color: white !important;
+  color: #000 !important;
   border: 2px solid black;
   border-radius: 5%;
   margin: auto;
