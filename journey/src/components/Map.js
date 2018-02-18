@@ -6,6 +6,10 @@ export class MapContainer extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    console.log(this.props.start)
+  }
+
   render() {
       console.log(this);
       return (
