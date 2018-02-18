@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './JourneyDetail.css';
+import Journeys from '../assets/mocks/journeys.js';
+import {
+  Link
+} from 'react-router-dom';
 
 class JourneyDetail extends Component {
   render() {
     return (
-    <div className="">
+    <div>
         <div className="ui vertical steps">
-  			<div className="completed step">
-    			<i className="truck icon"></i>
+        {Journeys.ma}
+  			<div className="step">
     			<div className="content">
       				<div className="title">Shipping</div>
       				<div className="description">Choose your shipping options</div>
