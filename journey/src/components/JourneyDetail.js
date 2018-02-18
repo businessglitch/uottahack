@@ -13,19 +13,20 @@ class JourneyDetail extends Component {
 	    	journey: Journeys[this.props.match.params.id],
 	    	start: {
 	    		lat: 0, 
-	    		lon: 0
+	    		lng: 0
 	    	}
 	    };
 	  }
 
 	setLocation(templat,templon) {
-		console.log(templon, templat);
-		 this.setState({
+		
+		this.setState({
             start: {
             	lat: templat,
-            	lon: templon
+            	lng: templon
             } 
         });
+        console.log(this.state.start);
 	}
 
 	componentDidMount() {
@@ -47,7 +48,7 @@ class JourneyDetail extends Component {
 				        ))}	
 					</div>
 					<div className="Map-container">
-						<MapContainer start={this.props.start} />
+						<MapContainer start={this.state.start} />
 					</div>
 		     	</div>
 		    );

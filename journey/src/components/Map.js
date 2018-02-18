@@ -7,18 +7,22 @@ export class MapContainer extends Component {
   }
 
   componentDidMount() {
+    console.log(this.props)
+  }
+
+  componentDidUpdate() {
     console.log(this.props.start)
+    //this.props.google.maps.event.trigger(map, 'resize');
   }
 
   render() {
-      console.log(this);
       return (
         <Map 
         style={{width: this.props.width || '500px', height: this.props.height || '500px'}}
         google={this.props.google} 
         initialCenter={this.props.start || {lat: 45.421530, lng: -75.697193}}
         zoom={17}>
-  
+
           <Marker name={'Starting Point'} position={this.props.start || {lat: 45.421530, lng: -75.697193}} />
           <Marker name={'End Point'} position={this.props.end || {lat: 45.421330, lng: -75.697293}} />
         </Map>
