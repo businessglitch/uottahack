@@ -1,66 +1,39 @@
 import React, { Component } from 'react';
 import './JourneyCards.css';
+import Journeys from '../assets/mocks/journeys.js';
+import {
+  Link
+} from 'react-router-dom';
 
 class JourneyCards extends Component {
-  render() {
-    return (
-      <div className="Header-title">
-        <h1>JourneyCards BITCHES</h1>
-        <div className="ui special cards">
-  <div className="card">
-    <div className="blurring dimmable image">
-      <div className="ui dimmer">
-        <div className="content">
-          <div className="center">
-            <div className="ui inverted button">Add Friend</div>
-          </div>
-        </div>
-      </div>
-      {/* <img src="/images/avatar/large/elliot.jpg"> */}
-    </div>
-    <div className="content">
-      <a className="header">Team Fu</a>
-      <div className="meta">
-        <span className="date">Create in Sep 2014</span>
-      </div>
-    </div>
-    <div className="extra content">
-      <a>
-        <i className="users icon"></i>
-        2 Members
-      </a>
-    </div>
-  </div>
-  <div className="card">
-    <div className="blurring dimmable image">
-      <div className="ui inverted dimmer">
-        <div className="content">
-          <div className="center">
-            <div className="ui primary button">Add Friend</div>
-          </div>
-        </div>
-      </div>
-      {/* <img src="../assets/images/beavertails.jpg" alt="boohoo" className="img-responsive"/> */}
-      {/* <img src="/images/avatar/large/jenny.jpg"> */}
-    </div>
-    <div className="content">
-      <a className="header">Team Hess</a>
-      <div className="meta">
-        <span className="date">Create in Aug 2014</span>
-      </div>
-    </div>
-    <div className="extra content">
-      <a>
-        <i className="users icon"></i>
-        2 Members
-      </a>
-    </div>
-  </div>
-</div>
+	createJourneyCards() {
+		console.log(Journeys[0]["1"]);
+	}
+	render() {
+	    return (
+		    <div  className="Header-title">
+		        <div className="ui special cards">
+		        { Journeys.map((item, i) => (    
+			  			<div  key={i} className="card">
+			    			<div className="content">
+			      				<a className="header">Journey #{i+1}</a>
+			     				<div className="meta">
+			        				<span className="date">Duration: {item["duration"]}</span><br></br>
+			        				<span className="date">Difficulty: {item["difficulty"]}</span><br></br>
+			        				<span className="date">Budget: {item["budget"]}</span>
+			        			</div>
+			    			</div>
+			    			<Link to="/JourneyDetail"><button onClick={this.createJourneyCards} className="ui blue button">START JOURNEY</button></Link>
+				    		<div className="extra content">
+				      			<a><i className="users icon"></i>{item["members"]} Members</a>
+				    		</div>
+			  			</div>
+		  			))}
 
-      </div>
-    );
-  }
+				</div>
+		    </div>
+	    );
+	}
 }
 
 export default JourneyCards;

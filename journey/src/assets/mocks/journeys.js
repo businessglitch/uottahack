@@ -1,7 +1,8 @@
-
-
 var journey_1 = {
-
+  "duration": "2 Hours",
+  "difficulty": "2",
+  "members": "2 - 4",
+  "budget" : "$100",
   "1" : {
 
     "duration": 7200000,
@@ -102,6 +103,10 @@ var journey_1 = {
 }//end of Journey_1
 
 var journey_2 = {
+  "duration": "1.5 Hours",
+  "difficulty": "2",
+  "members": "1 - 2",
+  "budget" : "$75",
 
 
   "1" : {
@@ -203,7 +208,11 @@ var journey_2 = {
 
 //end of Journey_2
 
-var journey_1 = {
+var journey_3 = {
+  "duration": "5 Hours",
+  "difficulty": "4",
+  "members": "3 - 6",
+  "budget" : "$250",
 
   "1" : {
 
@@ -306,3 +315,6 @@ var journey_1 = {
 }
 
 //end of Journey_3
+
+var Journeys = [journey_1,journey_2,journey_3];
+export default Journeys;
