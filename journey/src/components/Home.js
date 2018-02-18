@@ -12,11 +12,11 @@ class Home extends Component {
 
   	render() {
   		return(
-	        <div className="Home">
-	        	<Header />
-		        <p className="Home-intro">
-		          This is the bullshit that we add in the intro
-		        </p>
+	        <div className="Home centered">
+		        	<Header />
+			        <p className="Home-intro">
+			          Are you ready to go on a journey ?
+			        </p>
 		        <Link to="/JourneyCards"><button onClick={this.startJourney} className="Home-button massive ui blue button">START JOURNEY</button></Link>
 	      	</div>
 	      	);
@@ -24,4 +24,3 @@ class Home extends Component {
 }
 
 export default Home;
-
