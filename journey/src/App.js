@@ -6,7 +6,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Map from './components/Map.js';
+import SimpleMap from './components/Map.js';
 import JourneyCards from './components/JourneyCards.js';
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/" component={Map} />
+          <Route path="/" component={SimpleMap} />
           <Route path="/JourneyCards" component={JourneyCards} />
         </Switch>
       </div>
