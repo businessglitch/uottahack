@@ -40,8 +40,8 @@ class JourneyDetail extends Component {
 							<div key={i} className="step">
 				    			<div onClick={() => this.setLocation(item.venue.lat, item.venue.lon)} className="content">
 				      				<div className="title">{item.name}</div>
-				      				<div className="description">Location: {item.venue.name + item.venue.address_1}</div>
-				      				<div className="description">Time: {item.local_time}</div>
+				      				<div className="description"> {"Location:" + item.venue.name + item.venue.address_1}</div>
+									<div className="description">{"Time:" + item.local_time}</div>
 				    			</div>
 				  			</div>
 				        ))}	
