@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Header from './header.js';
+import {
+  Link
+} from 'react-router-dom';
 
 class Home extends Component {
 	startJourney() {
@@ -14,7 +17,7 @@ class Home extends Component {
 		        <p className="Home-intro">
 		          This is the bullshit that we add in the intro
 		        </p>
-		        <button onClick={this.startJourney} className=" center Home-button massive ui  blue button">START JOURNEY</button>
+		        <Link to="/JourneyCards"><button onClick={this.startJourney} className="Home-button massive ui blue button">START JOURNEY</button></Link>
 	      	</div>
 	      	);
   	}
