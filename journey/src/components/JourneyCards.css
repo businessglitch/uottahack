@@ -1,5 +1,9 @@
-.Header-title {
+.Journey-cards {
   font-size: 1.5em;
   text-align: center;
   color: #FFF;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
