@@ -12,8 +12,8 @@ class JourneyDetail extends Component {
 	    this.state = { 
 	    	journey: Journeys[this.props.match.params.id],
 	    	start: {
-	    		lat: 0, 
-	    		lng: 0
+	    		lat: 45, 
+	    		lng: -75
 	    	}
 	    };
 	  }
