@@ -1,22 +1,64 @@
-.Home {
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Raleway|Roboto');
+
+body {
   height: 700px;
   width:100%;
   background-image: url("../assets/images/giphy.gif");
   background-repeat: no-repeat;
-  background-size: 100% 800px; 
+  background-size: 100% 800px;
+  font-family:'Raleway';
 }
 
+.Home{
+  padding: 2.5%;
+  border: 3px solid white;
+  border-radius: 13%;
+  background-color: black transparent;
+  background:rgba(0, 0, 0, 0.7);
+  box-shadow: 5px 5px 5px #000000b3;
+}
+
+.Home p{
+  font-size: 3em;
+  width: auto;
+  padding-top: 3.5%;
+}
+
+.Home button{
+  background-color:lime !important;
+  font-family: 'Raleway' !important;
+  font-weight: bold !important;
+
+  padding: 15px 25px !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  outline: none !important;
+  color: #fff !important;
+  background-color: #4CAF50 !important;
+  border: none !important;
+  border-radius: 15px !important;
+}
+
+.Home button:hover{
+  background-color: #3e8e41 !important;
+}
+.Home button:active{
+  background-color: #3e8e41 !important;
+  transform: translateY(5%) !important;
+}
+
+
 .Home-intro {
-  font-size: large;
   color: #FFF;
   text-align: center;
 }
 
-.Home-button {
-  text-align: center;
-  width: 200px;
-  position: absolute;
-  left: 40%;
-  top: 50%;
 
+.centered {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }

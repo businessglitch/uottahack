@@ -29,7 +29,6 @@ class JourneyCards extends Component {
 				    		</div>
 			  			</div>
 		  			))}
-
 				</div>
 		    </div>
 	    );
