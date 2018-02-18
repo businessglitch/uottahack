@@ -35,8 +35,8 @@ class JourneyDetail extends Component {
   	render() {
 
 		    return (
-		    	<div className="parent-detail">
-		        	<div className=" Journey-detail ui vertical steps">
+		    	<div className="parent-detail row">
+		        	<div className=" Journey-detail ui vertical steps one-third column">
 				        {this.state.journey.events.map((item,i) => (
 							<div key={i} className="step">
 				    			<div onClick={() => this.setLocation(item.venue.lat, item.venue.lon)} className="content">
@@ -47,7 +47,7 @@ class JourneyDetail extends Component {
 				  			</div>
 				        ))}	
 					</div>
-					<div className="Map-container">
+					<div className="Map-container two-thirds column">
 						<MapContainer start={this.state.start} />
 					</div>
 		     	</div>

@@ -10,6 +10,10 @@
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "jquery": "^3.2.1",
+    "path": "^0.12.7"
   }
 }
