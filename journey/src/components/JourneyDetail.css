@@ -1,3 +1,11 @@
 .Map-container {
-	
+	float: right;
+	margin-left: 100px;
+}
+
+.Journey-detail {
+	margin-right: 10%;
+}
+.parent-detail {
+	position: absolute;
 }
