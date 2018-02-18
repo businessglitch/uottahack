@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home.js';
 import JourneyCards from './components/JourneyCards.js';
-import JourneyDetail from './components/JourneyDetl.js';
+import JourneyDetail from './components/JourneyDetail.js';
 
 
 class App extends Component {
