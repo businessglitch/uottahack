@@ -15,7 +15,7 @@ class JourneyCards extends Component {
 		        <div className="ui special cards">
 		        { Journeys.map((item, i) => (    
 			  			<div  key={i} className="card">
-			  				<img src={item["image"]} alt="boohoo" className="img-responsive" />
+			  				<img src={item.image} alt="boohoo" className="img-responsive" />
 			    			<div className="content">
 			      				<a className="header">Journey #{i+1}</a>
 			     				<div className="meta">
