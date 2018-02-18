@@ -1,32 +1,27 @@
 import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-import './Map.css';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
  
-const Any = ({ text }) => <div>{text}</div>;
- 
-class SimpleMap extends Component {
-    static defaultProps = {
-      center: {lat: 45.421530, lng: -75.697193},
-      zoom: 11
-    };
-   
-    render() {
-      return (
-        <div className="mapContainer">
-            <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyBGe2aketOnphR_JDoDkyqSC13GppFxCYo' }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-            >
-                <Any
-                    lat={59.955413}
-                    lng={30.337844}
-                    text={'Kreyser Avrora'}
-                />
-            </GoogleMapReact>
-        </div>
-      );
-    }
+export class MapContainer extends Component {
+  constructor(props) {
+    super(props);
   }
 
-export default SimpleMap;
+  render() {
+      console.log(this);
+      return (
+        <Map 
+        style={{width: this.props.width || '500px', height: this.props.height || '500px'}}
+        google={this.props.google} 
+        initialCenter={this.props.start || {lat: 45.421530, lng: -75.697193}}
+        zoom={17}>
+  
+          <Marker name={'Starting Point'} position={this.props.start || {lat: 45.421530, lng: -75.697193}} />
+          <Marker name={'End Point'} position={this.props.end || {lat: 45.421330, lng: -75.697293}} />
+        </Map>
+      );
+    }
+}
+ 
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyBGe2aketOnphR_JDoDkyqSC13GppFxCYo'
+})(MapContainer);
