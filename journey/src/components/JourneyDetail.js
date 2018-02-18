@@ -9,22 +9,22 @@ import {
 class JourneyDetail extends Component {
 	 constructor(props) {
 	    super(props);
-	    this.state = { 
+	    this.state = {
 	    	journey: Journeys[this.props.match.params.id],
 	    	start: {
-	    		lat: 45, 
+	    		lat: 45,
 	    		lng: -75
 	    	}
 	    };
 	  }
 
 	setLocation(templat,templon) {
-		
+
 		this.setState({
             start: {
             	lat: templat,
             	lng: templon
-            } 
+            }
         });
         console.log(this.state.start);
 	}
@@ -35,19 +35,19 @@ class JourneyDetail extends Component {
   	render() {
 
 		    return (
-		    	<div className="parent-detail row">
-		        	<div className=" Journey-detail ui vertical steps one-third column">
+		    	<div className="parent-detail">
+		        	<div className=" Journey-detail ui vertical steps">
 				        {this.state.journey.events.map((item,i) => (
 							<div key={i} className="step">
 				    			<div onClick={() => this.setLocation(item.venue.lat, item.venue.lon)} className="content">
 				      				<div className="title">{item.name}</div>
 				      				<div className="description">{"Location:" + item.venue.name + item.venue.address_1}</div>
 									<div className="description">{"Time:" + item.local_time}</div>
-				    			</div>
-				  			</div>
-				        ))}	
+				    	</div>
+				   </div>
+				        ))}
 					</div>
-					<div className="Map-container two-thirds column">
+					<div className="Map-container">
 						<MapContainer start={this.state.start} />
 					</div>
 		     	</div>
@@ -56,4 +56,3 @@ class JourneyDetail extends Component {
   	}
 
 export default JourneyDetail;
-
