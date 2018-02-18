@@ -1,7 +1,5 @@
-
-
-.Map-container div{
-	width: 500px;
-	height: 500px;
-	float:right;
+.Map-container{
+	display:inline-block;
+	margin-right: 10%;
+	padding: 5%;
 }
