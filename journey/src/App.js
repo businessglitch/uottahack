@@ -6,7 +6,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import SimpleMap from './components/Map.js';
+import Home from './components/Home.js';
 import JourneyCards from './components/JourneyCards.js';
 import JourneyDetail from './components/JourneyDetail.js';
 
