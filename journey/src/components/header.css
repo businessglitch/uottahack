@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Raleway|Roboto');
+
 .Header-title {
   font-size: 1.5em;
   text-align: center;
   color: #FFF;
+  padding:1.5%;
+}
+
+.Header-title h1{
+  font-size: 4em;
+  font-family: 'Lobster', cursive;
 }

@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import SimpleMap from './components/Map.js';
 import JourneyCards from './components/JourneyCards.js';
+import JourneyDetail from './components/JourneyDetail.js';
 
 class App extends Component {
   constructor(props) {
@@ -28,10 +29,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Switch>
-          <Route path="/" component={SimpleMap} />
-          <Route path="/JourneyCards" component={JourneyCards} />
-        </Switch>
+        <Router>
+            <div>
+                <Route exact path="/" component={Home} />
+                <Route path="/JourneyCards" component={JourneyCards} />
+                <Route path="/JourneyDetail" component={JourneyDetail} />
+            </div>
+        </Router>
       </div>
     );
   }
