@@ -1,3 +1,8 @@
+body{
+  background-image: url("../assets/images/adventurePics/suzyq.jpg");
+  background-size: cover;
+}
+
 .Journey-cards {
   font-size: 1.5em;
   text-align: center;
@@ -6,4 +11,36 @@
   width: 50%;
   border: 3px solid green;
   padding: 10px;
+}
+
+.card{
+  color: white !important;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin: auto;
+  padding: 0 3%;
+  background-color: rgb(0,0,0,0.7)
+}
+
+.card:hover{
+  transform: translateX(-1.5%) translateY(-1.5%) !important;
+}
+
+.card:active{
+  transform:  translateY(3%) !important;
+}
+
+.cards{
+  margin-top: 10% !important;
+  padding: 1.5%;
+}
+
+
+
+.img-responsive{
+  width:100%;
+}
+
+h2{
+  color:black !important;
 }

@@ -3,7 +3,7 @@ var journey_1 = {
   "difficulty": "2",
   "members": "2 - 4",
   "budget" : "$100",
-  "image" : "https://www.google.ca/imgres?imgurl=https%3A%2F%2F1.bp.blogspot.com%2F-5bPNsF5plzw%2FVnJWs-7RbrI%2FAAAAAAAARmA%2FDaZmn8YUjAk%2Fs1600-r%2Flogo_research_at_google_color_1x_web_512dp.png&imgrefurl=https%3A%2F%2Fresearch.googleblog.com%2F2016%2F11%2Fenhance-raisr-sharp-images-with-machine.html&docid=nfimRlvWzzmuUM&tbnid=orgUjB8dB36vVM%3A&vet=10ahUKEwjFgtPFl6_ZAhXp6IMKHRG3Cf8QMwjHASgGMAY..i&w=483&h=480&bih=726&biw=1280&q=google%20images&ved=0ahUKEwjFgtPFl6_ZAhXp6IMKHRG3Cf8QMwjHASgGMAY&iact=mrc&uact=8",
+  "image" : "../assets/images/adventurePics/nag.jpg",
 
   "events" : [{
 
