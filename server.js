@@ -1,6 +1,5 @@
 var express = require('express');
 const admin = require('firebase-admin');
-var config = require('./config/database');
 
 var app = express();
 var port = 5000;
