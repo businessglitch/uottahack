@@ -12,8 +12,8 @@ class JourneyDetail extends Component {
 	    this.state = { 
 	    	journey: Journeys[this.props.match.params.id],
 	    	start: {
-	    		lat: 0, 
-	    		lng: 0
+	    		lat: 45, 
+	    		lng: -75
 	    	}
 	    };
 	  }
@@ -41,7 +41,7 @@ class JourneyDetail extends Component {
 							<div key={i} className="step">
 				    			<div onClick={() => this.setLocation(item.venue.lat, item.venue.lon)} className="content">
 				      				<div className="title">{item.name}</div>
-				      				<div className="description"> {"Location:" + item.venue.name + item.venue.address_1}</div>
+				      				<div className="description">{"Location:" + item.venue.name + item.venue.address_1}</div>
 									<div className="description">{"Time:" + item.local_time}</div>
 				    			</div>
 				  			</div>
