@@ -10,22 +10,9 @@ import Home from './components/Home.js';
 import JourneyCards from './components/JourneyCards.js';
 import JourneyDetail from './components/JourneyDetail.js';
 
+
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  async callApi() {
-    var response = await fetch('/api/venues');
-    var body = await response.json();
-  }
-
-  componentDidMount() {
-    this.callApi()
-      .then(function(){})
-      .catch(function(){});
-  }
-
+  
   render() {
     return (
       <div>
